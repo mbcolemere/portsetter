@@ -1,0 +1,13 @@
+Uso:
+    -e [PORT]           (Debe estar precedida por -p o --port) 
+                        el usuario puede introducir una variable 
+                        ambiental para configurar el puerto o 
+                        dejar en blanco y la puso a PORT por defecto
+    -h, --help          imprime pantalla de uso para el usuario
+    -p, --port [NUM]    le dice a la máquina qué puerto para escuchar
+    -v, --version       imprime la versión actual del programa
+    -!, --about         imprime sobre la pantalla del autor del programa
+    -?                  imprime pantalla de uso para el usuario
+Devuelve 0 para ningún error, 1 para la entrada inadecuada, 2, 
+para una salida de puerto rango (número de puerto sólo puede 
+ser de 1 a 65000), o 3 para demasiados argumentos. Gracias.

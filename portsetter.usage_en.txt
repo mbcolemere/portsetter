@@ -1,0 +1,12 @@
+Usage:
+    -e [PORT]           (must be preceded by -p or --port) user may
+                        enter an environmental variable to set port,
+                        or leave blank and set it to default PORT
+    -h, --help          prints out usage screen to user
+    -p, --port [NUM]    tells machine which port to listen on
+    -v, --version       prints out current version of program
+    -!, --about         prints out about screen of program's author
+    -?                  prints out usage screen to user
+Returns 0 for no error, 1 for improper input, 2, for an out of
+range port (port number can only be from 1 to 65000), or 3 for
+too many arguments. Thank you.
