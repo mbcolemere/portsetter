@@ -7,7 +7,7 @@ your local machine and extract those files. Then you will go to your new workspa
 on cloud 9 (or whatever workspace you are using). Go to file and select "Upload 
 local files..." and select the folder you just downloaded (portsetter-master). Then
 make sure you rename the file "portsetter". The correct .txt files and .cpp files 
-will all be there.
+will all be there. 
 
 TO SET THE ALIAS (NOT NEEDED FOR TESTING!):
 An alias will need to be created for ./portsetter.cpp.o and the alias for it is 
@@ -20,7 +20,10 @@ you must be in the /workspace/portsetter folder or else it won't be able to read
 the txt files.
 
 FOR TESTING: 
-From the terminal, make sure you are in the right folder (/workspace/portsetter).
+The cpp.o (executable files) have to exist before you can execture the program. 
+So in order for the executable to show up you need to run the .cpp files out of
+the terminal a couple of times until they show up (just for running from the 
+terminal)From the terminal, make sure you are in the right folder (/workspace/portsetter).
 After you are there, all you need to do is type in "./testsetport.cpp.o" and the test 
 will run showing you each individual test, with an output at the end telling you 
 if they ran correctly or not. This test will only work in the /workspace/portsetter
