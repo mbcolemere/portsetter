@@ -13,8 +13,8 @@ TO SET THE ALIAS (NOT NEEDED FOR TESTING!):
 An alias will need to be created for ./portsetter.cpp.o and the alias for it is 
 setport. In terminal type nano ~/.bashrc and scroll to the bottom where you will 
 type "alias setport='/home/ubuntu/workspace/portsetter/portsetter.cpp.o'"
-and save the file, and that will allow you to use the setport command instead of typing 
-in ./portsetter.cpp.o when running that program.
+and save the file, and then reset the terminal. That will allow you to use the 
+setport command instead of typing in ./portsetter.cpp.o when running that program.
 With Change Order 1, you could run the program from any folder, but for this one
 you must be in the /workspace/portsetter folder or else it won't be able to read
 the txt files.
