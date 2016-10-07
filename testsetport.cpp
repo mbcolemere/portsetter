@@ -1,12 +1,9 @@
+// Matthew Colemere - testsetport for portsetter.cpp
 #include <iostream>
 #include <string>
 #include <fstream>
 #include <vector>
 using namespace std;
-
-// Declare const variables
-const int HAPPY = 10;
-const int SAD = 20;
 
 int main() {
     // Declare local variables
