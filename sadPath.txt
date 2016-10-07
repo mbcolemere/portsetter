@@ -1,0 +1,20 @@
+./portsetter.cpp.o --h
+./portsetter.cpp.o -help
+./portsetter.cpp.o -help --h
+./portsetter.cpp.o --?
+./portsetter.cpp.o --!
+./portsetter.cpp.o -about
+./portsetter.cpp.o --a
+./portsetter.cpp.o -p -e -e 
+./portsetter.cpp.o -p 93939
+./portsetter.cpp.o -p -1
+./portsetter.cpp.o -p 77 33
+./portsetter.cpp.o --port 12 1
+./portsetter.cpp.o -2 -3
+./portsetter.cpp.o -p
+./portsetter.cpp.o -! -?
+./portsetter.cpp.o -q 23
+./portsetter.cpp.o try again
+./portsetter.cpp.o -p -e mytime
+./portsetter.cpp.o p e PORT
+./portsetter.cpp.o line line
