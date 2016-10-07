@@ -1,5 +1,8 @@
 How to run the test for portsetter.cpp (updated for CO3):
 
+First you need to download the files to your cloud 9. The first thing you will do 
+is select the green button that says clone or download.
+
 From the terminal, make sure you are in the right folder (/workspace/portsetter).
 After you are there, all you need to do is type in "./testport_es.cpp.o" and the test 
 will run showing you each individual test, with an output at the end telling you 
