@@ -1,4 +1,4 @@
-How to run the test for portsetter.cpp (updated for CO3):
+How to run the test for portsetter.cpp (updated for CO4):
 
 DOWNLOAD FILES:
 First you need to download the files to your cloud 9. The first thing you will do 
