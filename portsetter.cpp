@@ -169,7 +169,7 @@ int main(int argc, char* args[]) {
         // If there are two arguments, convert the second one into a string
         if (argc == 3 && (flag == "-p" || flag == "--port")) {
             string num(args[2]);
-            if (num == "-e") {
+            if (num == "-e" || num == "--environment") {
                 string envVar = getenv("PORT");
                 if (envVar != "") {
                     for (int i=0; i<envVar.length(); ++i) {
@@ -212,7 +212,7 @@ int main(int argc, char* args[]) {
         // Check for -p or --port followed by -e with enviroment variable
         if (argc == 4 && (flag == "-p" || flag == "--port")) {
             string secFlag(args[2]);
-            if (secFlag != "-e") {
+            if (secFlag != "-e" && secFlag != "--environment") {
                 cout << msg[1];
                 usage(lang);
                 return 1;

@@ -1,6 +1,6 @@
 Uso:
     -e [PORT]           (Debe estar precedida por -p o --port) 
-                        el usuario puede introducir una variable 
+    --environment [PORT] el usuario puede introducir una variable 
                         ambiental para configurar el puerto o 
                         dejar en blanco y la puso a PORT por defecto
     -h, --help          imprime pantalla de uso para el usuario

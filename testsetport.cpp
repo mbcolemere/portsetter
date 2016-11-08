@@ -52,6 +52,51 @@ int main() {
     if (positiveEn == true) cout << "All of the English positive tests passed!" << endl << endl;
     else cout << "Some of the English positive tests failed!" << endl << endl;
     
+    //Added By Brandon Bentley To test --environment
+    putenv("BAR=1433");
+    putenv("FOO=3116");
+    putenv("BAZ=4000");
+    in.open("happyPathByBrandon.txt");
+    if (in.fail()) {
+        cout << "Could not open the file happyPathByBrandon.txt!" << endl;
+        cout << "Please pick a correct file!" << endl;
+    }
+    
+    line = "";
+    while (!in.eof()) {
+        getline(in, line);
+        tests.push_back(line);
+    }
+    in.close();
+    cout << "-------------------------------" << endl;
+    cout << "-------------------------------" << endl;
+    cout << "Testing Stuff Added by Brandon!" << endl;
+    cout << "-------------------------------" << endl;
+    cout << "-------------------------------" << endl;
+    // Test second batch of tests in spanish
+    for (int i = 0; i < tests.size(); ++i) {
+        testCase = tests[i];
+        statusCode = system(testCase.c_str()) / 256;
+        testCase.erase(0,18);
+        cout << endl << "setport" + testCase << endl;
+        if (statusCode != 0) {
+            cout << "Case Tested: setport " + testCase + " ...Test Failed" << endl << endl;
+            ++fail;
+            positiveEs = false;
+        }
+        else {
+            cout << "Case Tested: setport " + testCase + " ...Test Passed!" << endl << endl;
+            ++pass;
+        }
+    }
+    cout << "-------------------------------" << endl;
+    cout << "-------------------------------" << endl;
+    cout << "Finished with Testing Stuff Added by Brandon!" << endl;
+    cout << "-------------------------------" << endl;
+    cout << "-------------------------------" << endl;
+    //End of Brandons added Tests
+    
+    
     // Change language to spanish and run more tests
     setenv("LANGUAGE", "es", 1);
     tests.clear();
@@ -134,5 +179,6 @@ int main() {
         cout << "All of the Test Cases were handled correctly, "<< endl;
         cout << "including the changing of languages!" << endl;
     }
-    else cout << "Not all of the tests were handled correctly!" << endl;
+    else cout << "Not all of the tests were handled correctly!" << endl; 
+    
 }

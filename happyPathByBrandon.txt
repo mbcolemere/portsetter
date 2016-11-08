@@ -1,0 +1,7 @@
+./portsetter.cpp.o --port --environment
+./portsetter.cpp.o --port --environment BAR
+./portsetter.cpp.o --port -e BAR
+./portsetter.cpp.o --port --environment FOO
+./portsetter.cpp.o --port -e FOO
+./portsetter.cpp.o --port --environment BAZ
+./portsetter.cpp.o --port -e BAZ

@@ -1,6 +1,6 @@
 Usage:
-    -e [PORT]           (must be preceded by -p or --port) user may
-                        enter an environmental variable to set port,
+    -e [PORT],          (must be preceded by -p or --port) user may
+    --environment [PORT] enter an environmental variable to set port,
                         or leave blank and set it to default PORT
     -h, --help          prints out usage screen to user
     -p, --port [NUM]    tells machine which port to listen on
